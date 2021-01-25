@@ -21,7 +21,7 @@ with open('model.pickle', 'rb') as handle:
 
 @app.route('/')
 def main():
-    return render_template('main.html')
+    return render_template('htmlfile.html')
 
 #Receiving the input url from the user and using Web Scrapping to extract the news content
 @app.route('/predict',methods=['GET','POST'])
